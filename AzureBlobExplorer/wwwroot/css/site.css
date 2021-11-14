@@ -1,0 +1,166 @@
+﻿body {
+    font-size: .875rem;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+    .nav-scroller .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-top: -1px;
+        overflow-x: auto;
+        color: rgba(255, 255, 255, .75);
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+.nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+    .nav-underline .nav-link:hover {
+        color: #007bff;
+    }
+
+.nav-underline .active {
+    font-weight: 500;
+    color: #343a40;
+    text-transform: uppercase;
+}
+
+[role="main"] {
+    padding-top: 10px; /* Space for fixed navbar */
+}
+
+#loaderMask {
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.75;
+    z-index: 2000;
+}
+
+#loader {
+    width: 200px;
+    height: 130px;
+    position: fixed;
+    background: url(../img/loader.gif) no-repeat center center;
+    z-index: 999999;
+    left: 50%;
+    margin: -65px 0 0 -65px;
+    top: 50%;
+    text-align: center;
+}
+
+    #loader p {
+        position: absolute;
+        width: 100%;
+        top: 10px;
+        font-size: 18px;
+        color: #777777;
+    }
+
+    #loader div {
+        background: #d4d4d4;
+        color: #235771;
+        font-size: 13px;
+        padding: 5px;
+        text-align: center;
+    }
+
+.hide {
+    display: none;
+}
+
+td > i {
+    padding: 12px 6px;
+}
+
+#dataTable td:nth-child(1), #dataTable th:nth-child(1),
+#dataTable td:nth-child(2), #dataTable th:nth-child(2),
+#dataTable td:nth-child(3), #dataTable th:nth-child(3) {
+    width: 70px;
+}
+
+#dataTable td:nth-child(5), #dataTable th:nth-child(5),
+#dataTable td:nth-child(6), #dataTable th:nth-child(6),
+#dataTable td:nth-child(7), #dataTable th:nth-child(7) {
+    width: 140px;
+}
+
+.toastContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 1999;
+    width: 370px;
+}
+
+.fileProgress {
+    background: #f0f0f0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+    .fileProgress .bar {
+        background: green;
+        width: 0%;
+        height: 30px;
+    }
+
+    .fileProgress .label {
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30px;
+    }
+
+.nameField {
+    width: 200px;
+    overflow: hidden;
+    height: 20px;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.error-page-title h1 {
+    color: #004990;
+    font-family: DIN Next LT Pro Light,sans-serif;
+    font-size: 74px;
+    margin-top: 24px;
+    margin-bottom: 6px;
+}
+
+.error-page-title p {
+    color: #494949;
+    font-family: DIN Next LT Pro Medium,sans-serif;
+    font-size: 33px;
+    line-height: 38px;
+}
+
+.error-page-text {
+    font-family: DIN Next LT Pro,sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 27px;
+}
+
+    .error-page-text h3 {
+        font-size: 34px;
+    }
